@@ -23,6 +23,12 @@ public class ApplicationConfig extends Application {
     }
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(fr.unice.miage.ntdp.bibliotheque.services.AuteurFacadeREST.class);
+        resources.add(fr.unice.miage.ntdp.bibliotheque.services.CategorieFacadeREST.class);
         resources.add(fr.unice.miage.ntdp.bibliotheque.services.CategorieRessource.class);
+        resources.add(fr.unice.miage.ntdp.bibliotheque.services.LivreFacadeREST.class);
+        resources.add(fr.unice.miage.ntdp.bibliotheque.services.PersonneFacadeREST.class);
+        resources.add(fr.unice.miage.ntdp.bibliotheque.services.PretFacadeREST.class);
+        resources.add(fr.unice.miage.ntdp.bibliotheque.services.UsersFacadeREST.class);
     }
 }
