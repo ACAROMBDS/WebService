@@ -29,12 +29,12 @@ public class CategorieRessource extends AbstractFacade<Categorie>{
     public CategorieRessource(){
         super(Categorie.class);
     }
-    @GET
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    //@GET
+    //@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     //@Path("hello")
-    public String hello(){
-       return "La ressource demandée existe!";
-    }
+    //public String hello(){
+       //return "La ressource demandée existe!";
+    //}
    
     @GET
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
@@ -43,8 +43,7 @@ public class CategorieRessource extends AbstractFacade<Categorie>{
         return super.findAll();
     }
     @POST
-    @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
-    @Consumes({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
+    @Consumes({"application/xml", "application/json"})
     //@Path("creerCategorie")
     public void creer(Categorie categorie){
         super.create(categorie);
