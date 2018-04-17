@@ -30,5 +30,6 @@ public class ApplicationConfig extends Application {
         resources.add(fr.unice.miage.ntdp.bibliotheque.services.PersonneFacadeREST.class);
         resources.add(fr.unice.miage.ntdp.bibliotheque.services.PretFacadeREST.class);
         resources.add(fr.unice.miage.ntdp.bibliotheque.services.UsersFacadeREST.class);
+        resources.add(org.netbeans.rest.application.config.RequestFilter.class);
     }
 }

@@ -21,7 +21,7 @@ import javax.ws.rs.Produces;
 
 /**
  *
- * @author dmichel
+ * @author rony
  */
 @Stateless
 @Path("fr.unice.miage.ntdp.bibliotheque.livre")
